@@ -78,7 +78,7 @@ class DeviceProcessor(BaseProcessor):
             name=device_name,
             model=self.processor_type,
             manufacturer=DEFAULT_NAME,
-            via_device=(DEFAULT_NAME, self._hostname),
+            via_device_id=(DEFAULT_NAME, self._hostname),
         )
 
         return device_info
